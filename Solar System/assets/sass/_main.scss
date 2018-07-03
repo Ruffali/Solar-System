@@ -1,0 +1,629 @@
+body{
+    overflow: hidden;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url(../image/stars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .sun{
+        width: 7.5%;
+        position: absolute;
+        top: 5.5%;
+        left: 0%;
+        img{
+            cursor: pointer;
+            width: 100%;
+            height: 116px;
+            animation: planets 867s linear infinite;
+        }
+    }
+    .mercury{
+        width: 8%;
+        height: 123px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9%;
+        left: 3%;
+        transition: all 2s ease;
+        img{
+            width: 9%;
+            height: 9px;
+            animation: planets 160s linear infinite;
+            margin-left: 6%;
+            margin-top: 80%;
+        }
+    }
+    .venus{
+        width: 10%;
+        height: 156px;
+        border-radius: 50%;
+        position: absolute;
+        top: 28.9%;
+        left: -4.3%;
+        img{
+            width: 15%;
+            height: 20px;
+            animation: planets 267s linear infinite;
+            margin-left: 74%;
+        }
+    }
+    .earth{
+        width: 14.2%;
+        height: 216px;
+        border-radius: 50%;
+        position: absolute;
+        top: 38%;
+        left: 0.3%;
+        img{
+            width: 9%;
+            height: 16px;
+            animation: planets 1035s linear infinite;
+            margin-left: 21%;
+        }
+        .moon{
+            width: 10%;
+            height: 21px;
+            border-radius: 50%;
+            position: absolute;
+            top: 1.5%;
+            left: 20%;
+            img{
+                width: 53%;
+                height: 6px;
+                animation: planets 470s linear infinite;
+                margin-left: -23%;
+            }
+        }
+    }
+    .mars{
+        width: 18%;
+        height: 277px;
+        border-radius: 50%;
+        position: absolute;
+        top: 22%;
+        left: -12.5%;
+        img{
+            width: 5%;
+            height: 13px;
+            animation: planets 2s linear infinite;
+            margin-left: 90%;
+            margin-top: 76%;
+        }
+    }
+    .jupiter{
+        width: 25%;
+        height: 388px;
+        border-radius: 50%;
+        position: absolute;
+        top: 14.5%;
+        left: -3.5%;
+        img{
+            width: 13%;
+            height: 50px;
+            animation: planets 38s linear infinite;
+            margin-left: 25%;
+            margin-top: 91%;
+        }
+    }
+    .saturn{
+        width: 38%;
+        height: 583px;
+        border-radius: 50%;
+        position: absolute;
+        top: 73.8%;
+        left: -7%;
+        img{
+            width: 9%;
+            height: 50px;
+            animation: planets 47s linear infinite;
+            margin-left: 26%;
+        }
+        .saturnRing{
+            width: 7%;
+            border-radius: 50%;
+            position: absolute;
+            top: -0.8%;
+            left: 25.9%;
+            img{
+                width: 248%;
+                height: 102px;
+                animation: planets 228s linear infinite;
+                margin-left: -60%;
+                margin-top: -52%;
+            }
+        }
+    }
+    .uranus{
+        width: 47%;
+        height: 723px;
+        border-radius: 50%;
+        position: absolute;
+        top: 61.5%;
+        left: 2.5%;
+        img{
+            width: 3%;
+            height: 21px;
+            animation: planets 117s linear infinite;
+            margin-left: 3%;
+            margin-top: 27%;
+        }
+    }
+    .neptune{
+        width: 54%;
+        height: 820px;
+        border-radius: 50%;
+        position: absolute;
+        top: 4%;
+        left: -4%;
+        img{
+            width: 2.5%;
+            height: 18px;
+            animation: planets 178s linear infinite;
+            margin-left: 14.5%;
+            margin-top: 85%;
+        }
+    }
+    .planetsNameRight{
+        opacity: 1;
+        float: right;
+        text-align: right;
+        padding-right: 2%;
+        transition: all 3s ease;
+        div{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 2ch;
+                padding-top: 45%;
+                color: rgba(128, 128, 128, 0.61);
+                transition: all 1s ease;
+                cursor: pointer;
+                &:hover{
+                    color: #0CF;
+                }
+            }
+        }
+    }
+    .planetsNameDown{
+        opacity: 0;
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+        transition: all 6s ease;
+        // text-align: right;
+        // padding-right: 2%;
+        // z-index: 155555;
+        div{
+            display: inline-block;
+            padding-left: 5%;
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 2ch;
+                color: rgba(128, 128, 128, 0.61);
+                transition: all 1s ease;
+                cursor: pointer;
+            }
+        }
+    }
+    .info{
+        .sunInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -5% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/sunGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .mercuryInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -18% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/mercuryGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .venusInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -18% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/venusGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .earthInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -18% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/earthGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .marsInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -18% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/marsGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .jupiterInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -18% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/jupiterGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .saturnInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 20%;
+            margin: 1% -18% 0% 0%;
+            background: rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+                height: 25vh;
+                width: 100%;
+                margin-left: 11%;
+                background-image: url(../image/gif/saturnGif.gif);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: -1%;
+                border-top-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .uranusInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -20% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/uranusGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+        .neptuneInfo{
+            opacity: 0;
+            padding: 1%;
+            width: 18%;
+            margin: 1% -20% 0% 0%;
+            background:rgba(0, 0, 0, 0.288);
+            float: right;
+            text-align: center;
+            transition: all 1s ease;
+            i{
+                color: white;
+                float: right;
+                padding: 2%;
+                cursor: pointer;
+                font-size: 1.3ch;
+            }
+            .gif{
+            height: 25vh;
+            width: 79%;
+            margin-left: 11%;
+            background-image: url(../image/gif/neptuneGif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .content{
+            h1{
+                font-family: 'Copse', serif;
+                font-size: 1.5ch;
+                padding-top: 10%;
+                color: white;
+                span{
+                    color: rgb(189, 187, 187);
+                    font-size: 1.2ch;
+                }
+            }
+        }
+        }
+    }
+    .place, .borderButton, .revolution{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-color: rgba(0, 204, 255, 0.473);
+        font-family: 'Yanone Kaffeesatz';
+        padding: 4px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 0px rgba(0, 204, 255, 0.473), 0px 4px 25px rgba(0, 0, 0, 0.7);
+        width: 8%;
+        text-align: center;
+        transition: all .1s ease;
+        margin: 0.5%;
+        &:active{
+        box-shadow: 0px 3px 0px rgba(0, 204, 255, 0.473), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+        }
+    }
+    .borderButton{
+    transition: all 5s linear !important;
+    opacity: 0;
+    
+    }
+    .revolution{
+    transition: all 5s linear !important;
+    opacity: 0;
+    width: 10%;
+    }
+}
+.border{
+    // transition: all 0.8s linear !important;
+    border: 1px solid rgba(128, 128, 128, 0.61)!important;
+}
+.borderWhite{
+    // transition: all 0.8s linear !important;
+    border: 1px solid white!important;
+}
+
+
+
+@keyframes planets {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes revolution {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
